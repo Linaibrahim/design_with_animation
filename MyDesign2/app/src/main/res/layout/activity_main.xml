@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pcworld.myapplication.MainActivity">
+
+    <ImageView
+        android:id="@+id/bigimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/images" />
+
+    <TextView
+        android:id="@+id/logoname"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="           logo name"
+
+        android:textSize="35sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/logoname"
+        android:layout_marginTop="58dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/back"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Get start your journey..."
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please Enter Few details"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/useremail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/small"
+                android:hint="  Email"
+                android:inputType="textEmailAddress" />
+
+            <AutoCompleteTextView
+                android:id="@+id/userpassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/small"
+                android:hint=" Password"
+                android:inputType="textPassword" />
+
+            <AutoCompleteTextView
+                android:id="@+id/userconfirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/small"
+                android:hint=" Confirm Password"
+                android:inputType="textPassword" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:text="Remember Me"
+                android:textColor="@android:color/white"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button_login1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/loginback"
+                android:text="LOGIN"
+                 />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/butSet11"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:onClick="control"
+        android:background="@drawable/btn_control"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/butSet22"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_home"
+        android:layout_below="@+id/butSet11"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/butSet33"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_help"
+        android:layout_below="@+id/butSet22"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

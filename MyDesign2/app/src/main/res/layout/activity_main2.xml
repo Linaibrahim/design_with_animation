@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pcworld.myapplication.Main2Activity">
+    <ImageView
+        android:id="@+id/bigimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/images"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:background="@drawable/loginback"
+        android:text="ABOUT"
+        android:layout_below="@+id/button"
+        android:layout_toStartOf="@+id/button_login0" />
+
+    <Button
+        android:id="@+id/button"
+
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="28dp"
+        android:layout_weight="1"
+        android:background="@drawable/loginback"
+        android:text="SIGNAL"
+        android:layout_below="@+id/button_login0"
+        android:layout_alignEnd="@+id/button_login0" />
+
+    <TextView
+        android:id="@+id/logoname"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="                  logo name"
+
+        android:textSize="30sp"
+        />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/sp_ic"
+        android:layout_below="@+id/logoname"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button_newUser"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:background="@drawable/loginback"
+        android:text="New User"
+        android:layout_below="@+id/imageView"
+        android:layout_toStartOf="@+id/button_login0"
+        android:layout_marginTop="54dp" />
+
+    <Button
+        android:id="@+id/button_login0"
+
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:background="@drawable/loginback"
+        android:text="LOGIN"
+        android:layout_marginEnd="41dp"
+        android:layout_below="@+id/button_newUser"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <Button
+        android:id="@+id/butSet1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/logoname"
+        android:layout_alignParentEnd="true"
+        android:onClick="control"
+        android:background="@drawable/btn_control" />
+    <Button
+        android:id="@+id/butSet2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_home"
+        android:layout_below="@+id/butSet1"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/butSet3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_help"
+        android:layout_below="@+id/butSet2"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
